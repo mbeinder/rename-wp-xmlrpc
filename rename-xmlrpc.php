@@ -1,18 +1,12 @@
 <?php
 /*
 Plugin Name: Rename XMLRPC
-Plugin URI: http://wordpress.org/extend/plugins/rename-xml-rpc/
-Description: Make XML-RPC work if you rename the file. Some hosts block access to xmlrpc.php file making it impossible to use
-Author: Jorge Bernal
-Version: 1.1
-Author URI: http://koke.me
+Plugin URI: https://onairmarc.com
+Description: Customized version of Rename XMLRPC from Jorge Bernal. Make XML-RPC work if you rename the file. Some hosts block access to xmlrpc.php file making it impossible to use
+Author: Marc Beinder and Jorge Bernal
+Version: 0.1
+Author URI: https://onairmarc.com
 */
-
-//Create File Copy
-$file = __DIR__ . "../../../xmlrpc.php";
-$rpc = file_get_contents("$file");
-$putdir = __DIR__ . "../../../xmlrpc2.php";
-file_put_contents("$putdir", "$rpc");
 
 remove_action('wp_head','rsd_link');
 function renamed_rsd_link() {
