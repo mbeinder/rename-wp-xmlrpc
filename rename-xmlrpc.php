@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: Rename XMLRPC
+Plugin Name: XMLRPC Mask
 Plugin URI: https://onairmarc.com
 Description: Customized version of Rename XMLRPC from Jorge Bernal. Make XML-RPC work if you rename the file. Some hosts block access to xmlrpc.php file making it impossible to use
-Author: Marc Beinder and Jorge Bernal
-Version: 0.6
+Author: Marc Beinder
+Version: 1.0
 Author URI: https://onairmarc.com
 */
 
