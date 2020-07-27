@@ -1,13 +1,4 @@
 <?php
-/*
-Plugin Name: Rename XMLRPC
-Plugin URI: https://onairmarc.com
-Description: Customized version of Rename XMLRPC from Jorge Bernal. Make XML-RPC work if you rename the file. Some hosts block access to xmlrpc.php file making it impossible to use
-Author: Marc Beinder and Jorge Bernal
-Version: 0.1
-Author URI: https://onairmarc.com
-*/
-
 remove_action('wp_head','rsd_link');
 function renamed_rsd_link() {
         $renamed_xml_rpc_filename = 'xmlrpc2.php'; //CHANGE THIS poiting to the renamed file
