@@ -8,6 +8,11 @@ Version: 1.1
 Author URI: http://koke.me
 */
 
+//Create File Copy
+$file = __DIR__ . "../../../xmlrpc.php";
+$rpc = file_get_contents("$file");
+$putdir = __DIR__ . "../../../xmlrpc2.php";
+file_put_contents("$putdir", "$rpc");
 
 remove_action('wp_head','rsd_link');
 function renamed_rsd_link() {
